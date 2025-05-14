@@ -230,17 +230,16 @@
 
 
         <com.android.settings.preferences.SystemSettingSwitchPreference
-            android:key="ongoing_action_chip"
-            android:order="30"
-            android:title="@string/ongoing_action_chip_title"
-            android:summary="@string/ongoing_action_chip_summary"
-            android:defaultValue="true" /> 
-
-        <com.android.settings.preferences.SystemSettingSwitchPreference
             android:key="notification_sound_vib_screen_on"
             android:title="@string/notification_sound_vib_screen_on_title"
             android:summary="@string/notification_sound_vib_screen_on_summary"
             android:defaultValue="true" />
+
+        <Preference
+            android:key="ongoing_progress_settings"
+            android:title="@string/ongoing_progress_settings_title"
+            android:summary="@string/ongoing_progress_settings_summary"
+            android:fragment="com.android.settings.fragments.statusbar.OngoingProgressBar" />
 
     </PreferenceCategory>
 </PreferenceScreen>
